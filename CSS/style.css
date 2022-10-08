@@ -59,6 +59,7 @@ body {
 .main-header__button:hover {
   background-color: var(--162542);
   color: var(--FFFFFF);
+  cursor: pointer;
 }
 
 .main-article-container {
@@ -87,8 +88,11 @@ body {
   align-items: center;
 }
 
-.btn-image-container {
+.inside-container-1 {
   margin-bottom: 60px;
+}
+
+.btn-image-container {
 }
 
 .main-article-btn {
@@ -98,6 +102,7 @@ body {
 
 .main-article-btn:hover {
   background-color: var(--FF9B62);
+  cursor: pointer;
 }
 
 .release-date {
@@ -227,4 +232,116 @@ body {
 
 .footer-text span {
   font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-container {
+    max-width: 768px;
+    /* border: 1px solid black; */
+    padding: 49px 40px 43px 40px;
+    overflow: hidden;
+  }
+
+  .main-img-mobile,
+  .main-img-desktop,
+  .main-pattern {
+    display: none;
+  }
+
+  .main-img-tablet {
+    display: block;
+    height: 365px;
+    /* margin-left: 100px; */
+    border-radius: 20px 0 0 20px;
+  }
+
+  .content-container-1 {
+    display: flex;
+  }
+
+  .inside-container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 365px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .button {
+    width: 175px;
+    height: 58px;
+    font-size: 16px;
+  }
+
+  .image-container-1 {
+    margin-left: 100px;
+  }
+
+  .btn-image-container {
+    min-width: 339px;
+  }
+
+  .main-pattern,
+  .img-1-mobile,
+  .img-1-desktop,
+  .img-2-mobile,
+  .img-2-desktop {
+    display: none;
+  }
+
+  .img-1-tablet,
+  .img-2-tablet {
+    display: block;
+    height: 330px;
+    border-radius: 20px;
+  }
+
+  .img-1-tablet {
+    mix-blend-mode: multiply;
+  }
+
+  .mix-blend {
+    border-radius: 20px;
+    margin-right: 30px;
+  }
+
+  .second-article-container {
+    margin-bottom: 142px;
+    display: flex;
+    align-items: center;
+  }
+
+  .second-article__heading {
+    text-align: left;
+    margin: 0;
+    margin-right: 36px;
+  }
+
+  .second-article__text {
+    text-align: left;
+  }
+
+  .card-container {
+    margin-bottom: 142px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .article-card {
+    width: 281px;
+    margin-right: 60px;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-heading {
+    text-align: left;
+  }
+
+  .card-text {
+    text-align: left;
+  }
 }
