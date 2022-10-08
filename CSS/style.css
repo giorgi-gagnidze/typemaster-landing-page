@@ -56,6 +56,11 @@ body {
   color: var(--162542);
 }
 
+.main-header__button:hover {
+  background-color: var(--162542);
+  color: var(--FFFFFF);
+}
+
 .main-article-container {
   margin-bottom: 32px;
 }
@@ -89,6 +94,10 @@ body {
 .main-article-btn {
   background-color: var(--F16718);
   color: var(--FFFFFF);
+}
+
+.main-article-btn:hover {
+  background-color: var(--FF9B62);
 }
 
 .release-date {
