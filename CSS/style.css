@@ -133,6 +133,7 @@ body {
   overflow: hidden;
   margin-bottom: 70px;
   display: flex;
+  border-radius: 20px;
 }
 
 .main-pattern,
